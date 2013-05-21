@@ -46,7 +46,11 @@ if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     fi
     # Set the default shell to zsh if it isn't currently set to zsh
     if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
-        chsh -s $(which zsh)
+		if type chsh >/dev/null 2>&1 ; then 
+			chsh -s $(which zsh)
+		else 
+			echo "chsh doesn't exist. You have to set as your default sehll by hand"
+		fi
     fi
 else
     # If zsh isn't installed, get the platform of the current machine
@@ -55,8 +59,7 @@ else
     if [[ $platform == 'Linux' ]]; then
         sudo apt-get install zsh
         install_zsh
-    # If the platform is OS X, tell the user to install zsh :)
-    elif [[ $platform == 'Darwin' ]]; then
+    else 
         echo "Please install zsh, then re-run this script!"
         exit
     fi
