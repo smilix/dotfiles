@@ -1,26 +1,32 @@
 [user]
-	[color]
-	        diff = auto
-	        status = auto
-	        branch = auto
-	[alias]
-	  st=status
-	  ci=commit
-	  ca=commit -a
-	[core]
-	  editor=vim
-	[color "branch"]
-	  current = yellow reverse
-	  local = yellow
-	  remote = green
-	[color "diff"]
-	  meta = yellow bold
-	  frag = magenta bold
-	  old = red bold
-	  new = green bold
-	[color "status"]
-	  added = yellow
-	  changed = green
-	  untracked = cyan
-	[apply]
-	        whitespace = nowarn
+	name = Holger
+	email = holger@local
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+  st=status
+  ci=commit
+  ca=commit -a
+	meld = !/home/holger/git-tools/git-meld/git-meld.pl
+[core]
+  editor=vim
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = normal bold 
+  frag = cyan reverse
+  new = blue
+  old = red
+  commit = yellow  
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[apply]
+	whitespace = nowarn
+[url "https://"]
+	insteadOf = git://
