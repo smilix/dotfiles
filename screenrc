@@ -1,0 +1,14 @@
+startup_message off
+
+# define a bigger scrollback, default is 100 lines
+defscrollback 1024
+
+# Remove some stupid / dangerous key bindings
+bind ^k
+#bind L
+bind ^\
+
+# Enable non-blocking mode to better cope with flaky ssh connections.
+defnonblock 5
+
+caption always "%{rw} * | %H * $LOGNAME | %{bw}%c %D | %{-}%-Lw%{rw}%50>%{rW}%n%f* %t %{-}%+Lw%<"
