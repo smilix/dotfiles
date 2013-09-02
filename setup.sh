@@ -55,13 +55,10 @@ if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
 else
     # If zsh isn't installed, get the platform of the current machine
     platform=$(uname);
-    # If the platform is Linux, try an apt-get to install zsh and then recurse
+    echo "Please install zsh, then re-run this script!"
+    
     if [[ $platform == 'Linux' ]]; then
-        sudo apt-get install zsh
-        install_zsh
-    else 
-        echo "Please install zsh, then re-run this script!"
-        exit
+        echo "Run as root: apt-get install zsh"
     fi
 fi
 }
