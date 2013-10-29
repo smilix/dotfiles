@@ -1,3 +1,5 @@
+#General Settings
+term xterm
 startup_message off
 
 # define a bigger scrollback, default is 100 lines
@@ -7,6 +9,10 @@ defscrollback 1024
 bind ^k
 #bind L
 bind ^\
+
+#Ctrl-left, Ctrl-right to move between windows
+bindkey "^[[1;5C" next
+bindkey "^[[1;5D" prev
 
 # Enable non-blocking mode to better cope with flaky ssh connections.
 defnonblock 5
