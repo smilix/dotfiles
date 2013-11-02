@@ -12,6 +12,7 @@
 	meld = !/home/holger/git-tools/git-meld/git-meld.pl
 [core]
   editor=vim
+	fileMode = false
 [color "branch"]
   current = yellow reverse
   local = yellow
