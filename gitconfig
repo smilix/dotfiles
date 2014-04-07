@@ -31,3 +31,5 @@
 	whitespace = nowarn
 [url "https://"]
 	insteadOf = git://
+[pull]
+	rebase = true
