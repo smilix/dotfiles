@@ -33,3 +33,7 @@
 	insteadOf = git://
 [pull]
 	rebase = true
+[push]
+	default = simple
+[log]
+	date = local
