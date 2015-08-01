@@ -66,6 +66,8 @@ bindkey '^[^[[C' emacs-forward-word
 bindkey '^[^[[D' emacs-backward-word
 
 alias t="tmux a || tmux"
+# vim: open multiple files in tabs by default
+alias vim="vim -p"
 
 function ssht(){
   ssh $* -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
