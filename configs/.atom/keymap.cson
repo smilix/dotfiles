@@ -27,7 +27,5 @@
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'F10': 'editor:toggle-soft-wrap',
   'ctrl-d': 'editor:delete-line'
-
-'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
-  'F10': 'editor:toggle-soft-wrap'
