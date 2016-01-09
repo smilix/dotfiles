@@ -18,11 +18,11 @@
   local = yellow
   remote = green
 [color "diff"]
-  meta = black reverse 
+  meta = black reverse
   frag = cyan reverse
   new = blue
   old = red
-  commit = yellow  
+  commit = yellow
 [color "status"]
   added = yellow
   changed = green
@@ -31,9 +31,11 @@
 	whitespace = nowarn
 [url "https://"]
 	insteadOf = git://
-[pull]
-	rebase = true
 [push]
 	default = simple
 [log]
 	date = local
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
