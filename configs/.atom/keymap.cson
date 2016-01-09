@@ -29,3 +29,11 @@
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
   'F10': 'editor:toggle-soft-wrap',
   'ctrl-d': 'editor:delete-line'
+
+
+'.platform-darwin atom-text-editor':
+  'F10': 'editor:toggle-soft-wrap',
+  'cmd-d': 'editor:delete-line',
+  'cmd-shift-c': 'editor:toggle-line-comments',
+  'shift-alt-up': 'editor:move-line-up',
+  'shift-alt-down': 'editor:move-line-down'
