@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+ZSH_THEME="mine"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mvn brew git git-extras git-flow jump virtualenv adb bower grunt npm systemd colored-man-pages)
+plugins=(mvn git git-extras git-flow jump virtualenv adb bower grunt npm systemd colored-man-pages zsh-autosuggestions)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -64,6 +64,8 @@ fi
 
 bindkey '^[^[[C' emacs-forward-word
 bindkey '^[^[[D' emacs-backward-word
+# https://github.com/zsh-users/zsh-autosuggestions
+bindkey '^ ' autosuggest-accept
 
 alias t="tmux a || tmux"
 # vim: open multiple files in tabs by default
