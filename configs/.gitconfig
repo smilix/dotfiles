@@ -9,7 +9,7 @@
   st=status
   ci=commit
   ca=commit -a
-	meld = !/home/holger/git-tools/git-meld/git-meld.pl
+	lg = log --graph --decorate --abbrev-commit --branches
 [core]
   editor=vim
 	fileMode = false
