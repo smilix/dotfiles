@@ -41,3 +41,5 @@
 	required = true
 [pager]
 	branch = false
+[submodule]
+	recurse = true
