@@ -66,6 +66,9 @@ bindkey '^[^[[C' emacs-forward-word
 bindkey '^[^[[D' emacs-backward-word
 # https://github.com/zsh-users/zsh-autosuggestions
 bindkey '^ ' autosuggest-accept
+# Widgets that accept the entire suggestion
+ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=(
+)
 
 alias t="tmux a || tmux"
 # vim: open multiple files in tabs by default
