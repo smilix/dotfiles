@@ -59,6 +59,10 @@ function install_zsh {
       if [[ ! -d $DOTFILES/oh-my-zsh/ ]]; then
           if type git >/dev/null 2>&1 ; then
               git clone http://github.com/smilix/oh-my-zsh.git
+              cd oh-my-zsh
+              git submodule init
+              git submodule update
+              cd ..
           else
               echo "This script needs git to install oh-my-zsh."
           fi
