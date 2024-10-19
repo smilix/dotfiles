@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mvn git git-extras git-flow jump fzf adb npm systemd colored-man-pages zsh-autosuggestions zsh-interactive-cd docker docker-compose rust)
+plugins=(mvn git git-extras git-flow jump fzf npm systemd colored-man-pages zsh-autosuggestions zsh-interactive-cd docker docker-compose rust gradle)
 
 source $ZSH/oh-my-zsh.sh
 
